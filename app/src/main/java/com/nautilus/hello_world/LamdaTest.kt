@@ -8,6 +8,7 @@ package com.nautilus.hello_world
 fun main(args: Array<String>) {
 
     val program = Program()
+    program.addTwoNumbers(2, 7)     // Simple way... for better understanding
     program.sub(5, 3)
     program.addTwoNumbers(2, 7, object : MyInterface {   // Using Interface / OOPs way
 
@@ -34,7 +35,11 @@ class Program {
         val sum = a + b
         action.execute(sum)
     }
+    fun addTwoNumbers(a: Int, b: Int) {                         // Simple way.. Just for Better Understanding
 
+        val sum =  a + b
+        println(sum)
+    }
     fun sub(a: Int, b: Int) {                         // Simple way.. Just for Better Understanding
 
         val sum =  a - b
